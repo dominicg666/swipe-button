@@ -1,5 +1,7 @@
 # swipe-button
 
+![Alt Text](https://github.com/dominicg666/Demos/blob/master/ezgif.com-video-to-gif.gif)
+
 To get a Git project into your build:
 
 # Gradle:
@@ -35,8 +37,22 @@ To get a Git project into your build:
   
   # Example:
   
-   <ui.dom.com.Button.Swipe  
-   
+    Swipe swipe=(Swipe) findViewById(R.id.swipe);
+        swipe.setOnStateChangeListener(new OnStateChangeListener() {
+            @Override
+            public void onStateChange(int active) {
+                if(active==0){
+                    Toast.makeText(getApplicationContext(),"CENTER",Toast.LENGTH_SHORT).show();
+
+                }else if(active==1){
+                    Toast.makeText(getApplicationContext(),"TOP",Toast.LENGTH_SHORT).show();
+                }else if(active==2){
+                    Toast.makeText(getApplicationContext(),"BOTTOM",Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+    <ui.dom.com.Button.Swipe     
         android:id="@+id/swipe"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
@@ -52,3 +68,6 @@ To get a Git project into your build:
         app:tez_bottom_value="RECEIVE"
         >
     </ui.dom.com.Button.Swipe>
+    --------------------------------------------
+    Event
+    
