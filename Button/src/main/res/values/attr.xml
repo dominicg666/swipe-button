@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Tez">
+        <attr name="tez_layout_height" format="dimension"/>
+        <attr name="tez_layout_width" format="dimension"/>
+        <attr name="tez_padding" format="dimension"/>
+
+        <attr name="tez_strock_size" format="dimension"/>
+        <attr name="tez_strock_color" format="color"/>
+
+        <attr name="tez_button_width" format="dimension"/>
+        <attr name="tez_button_height" format="dimension"/>
+        <attr name="tez_button_paddingTop" format="dimension"/>
+        <attr name="tez_button_paddingBottom" format="dimension"/>
+        <attr name="tez_button_paddingLeft" format="dimension"/>
+        <attr name="tez_button_paddingRight" format="dimension"/>
+        <attr name="tez_background_color" format="color"/>
+        <attr name="tez_button_image" format="reference"/>
+
+        <attr name="tez_top_value" format="string" />
+        <attr name="tez_bottom_value" format="string" />
+        <attr name="tez_text_color" format="color"/>
+        <attr name="tez_text_size" format="dimension"/>
+
+    </declare-styleable>
+</resources>
